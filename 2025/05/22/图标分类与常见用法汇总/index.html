@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总 | snokjing の 避风港</title><meta name="author" content="snokjing"><meta name="copyright" content="snokjing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Font Awesome 图标分类：fab &#x2F; fas &#x2F; far 是什么？分别有什么作用？在 Hexo + Butterfly 主题中，我们通常使用 Font Awesome（简称 FA）图标系统来展示各种社交媒体图标与功能性图标。Font Awesome 将图标划分为多个种类，其中最常见的是以下三种：    类别 全称 作用说明    fab Font Awesome Br">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总">
+<meta property="og:url" content="http://example.com/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/index.html">
+<meta property="og:site_name" content="snokjing の 避风港">
+<meta property="og:description" content="Font Awesome 图标分类：fab &#x2F; fas &#x2F; far 是什么？分别有什么作用？在 Hexo + Butterfly 主题中，我们通常使用 Font Awesome（简称 FA）图标系统来展示各种社交媒体图标与功能性图标。Font Awesome 将图标划分为多个种类，其中最常见的是以下三种：    类别 全称 作用说明    fab Font Awesome Br">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg">
+<meta property="article:published_time" content="2025-05-22T08:39:54.000Z">
+<meta property="article:modified_time" content="2025-05-27T14:10:18.631Z">
+<meta property="article:author" content="snokjing">
+<meta property="article:tag" content="GPT">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="butterfly">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总",
+  "url": "http://example.com/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/",
+  "image": "https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg",
+  "datePublished": "2025-05-22T08:39:54.000Z",
+  "dateModified": "2025-05-27T14:10:18.631Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "snokjing",
+      "url": "http://example.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet preconnect" href="//at.alicdn.com/t/c/font_4919024_vvfppekf19f.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> 我？</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-paper-plane"></i><span> 说说</span></a></li><li><a class="site-page child" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.jpg" alt="Logo"><span class="site-name">snokjing の 避风港</span></a><a class="nav-page-title" href="/"><span class="site-name">Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> 我？</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-paper-plane"></i><span> 说说</span></a></li><li><a class="site-page child" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-22T08:39:54.000Z" title="发表于 2025-05-22 16:39:54">2025-05-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-27T14:10:18.631Z" title="更新于 2025-05-27 22:10:18">2025-05-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A8%8B%E5%BA%8F/">程序</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">627</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Font-Awesome-图标分类：fab-fas-far-是什么？分别有什么作用？"><a href="#Font-Awesome-图标分类：fab-fas-far-是什么？分别有什么作用？" class="headerlink" title="Font Awesome 图标分类：fab &#x2F; fas &#x2F; far 是什么？分别有什么作用？"></a>Font Awesome 图标分类：fab &#x2F; fas &#x2F; far 是什么？分别有什么作用？</h2><p>在 Hexo + Butterfly 主题中，我们通常使用 Font Awesome（简称 FA）图标系统来展示各种社交媒体图标与功能性图标。Font Awesome 将图标划分为多个种类，其中最常见的是以下三种：</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>全称</th>
+<th>作用说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>fab</code></td>
+<td>Font Awesome Brands</td>
+<td><strong>品牌图标</strong>，用于社交平台或服务（如 GitHub、QQ、WeChat 等）</td>
+</tr>
+<tr>
+<td><code>fas</code></td>
+<td>Font Awesome Solid</td>
+<td><strong>实心图标</strong>，常用于常规图标展示（如用户、信封、链接等）</td>
+</tr>
+<tr>
+<td><code>far</code></td>
+<td>Font Awesome Regular（少用）</td>
+<td><strong>空心图标</strong>，主要用于特定样式（如空心信封）</td>
+</tr>
+</tbody></table>
+<p>使用格式示例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- GitHub 品牌图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>   <span class="comment">&lt;!-- 用户图标（实心） --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-envelope&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 信封图标（空心） --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="常见图标及用途汇总"><a href="#常见图标及用途汇总" class="headerlink" title="常见图标及用途汇总"></a>常见图标及用途汇总</h2><h4 id="🏷-品牌标-fab（适合社交链接）"><a href="#🏷-品牌标-fab（适合社交链接）" class="headerlink" title="🏷 品牌标 fab（适合社交链接）"></a>🏷 品牌标 fab（适合社交链接）</h4><table>
+<thead>
+<tr>
+<th>图标名</th>
+<th>类名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GitHub</td>
+<td><code>fab fa-github</code></td>
+<td>常用于开发者个人主页</td>
+</tr>
+<tr>
+<td>QQ</td>
+<td><code>fab fa-qq</code></td>
+<td>国内常用社交工具</td>
+</tr>
+<tr>
+<td>WeChat</td>
+<td><code>fab fa-weixin</code></td>
+<td>微信</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><code>fab fa-facebook</code></td>
+<td>海外社交平台</td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><code>fab fa-twitter</code></td>
+<td>海外社交平台</td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><code>fab fa-instagram</code></td>
+<td>图片分享平台</td>
+</tr>
+<tr>
+<td>Reddit</td>
+<td><code>fab fa-reddit</code></td>
+<td>海外社区平台</td>
+</tr>
+<tr>
+<td>Linkedin</td>
+<td><code>fab fa-linkedin</code></td>
+<td>职业社交平台</td>
+</tr>
+</tbody></table>
+<h4 id="📦-实心-空心图标（fas-far）"><a href="#📦-实心-空心图标（fas-far）" class="headerlink" title="📦 实心&#x2F;空心图标（fas &#x2F; far）"></a>📦 实心&#x2F;空心图标（fas &#x2F; far）</h4><table>
+<thead>
+<tr>
+<th>图标用途</th>
+<th>类名（fas&#x2F;far）</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户</td>
+<td><code>fas fa-user</code></td>
+<td>用户头像、登录注册等</td>
+</tr>
+<tr>
+<td>链接&#x2F;网址</td>
+<td><code>fas fa-link</code></td>
+<td>用于跳转链接图标</td>
+</tr>
+<tr>
+<td>邮件&#x2F;文件传输</td>
+<td><code>fas fa-envelope</code></td>
+<td>联系方式、邮箱图标</td>
+</tr>
+<tr>
+<td>下载</td>
+<td><code>fas fa-download</code></td>
+<td>附件下载、资源获取按钮</td>
+</tr>
+<tr>
+<td>博客&#x2F;办公</td>
+<td><code>fas fa-file-alt</code></td>
+<td>博客正文、文档标识</td>
+</tr>
+<tr>
+<td>视频&#x2F;播放</td>
+<td><code>fas fa-play</code></td>
+<td>视频播放按钮、媒体图标</td>
+</tr>
+</tbody></table>
+<h4 id="🛠-功能图标（fas-far）：用于博客交互功能"><a href="#🛠-功能图标（fas-far）：用于博客交互功能" class="headerlink" title="🛠 功能图标（fas &#x2F; far）：用于博客交互功能"></a>🛠 功能图标（fas &#x2F; far）：用于博客交互功能</h4><table>
+<thead>
+<tr>
+<th>图标用途</th>
+<th>类名（fas&#x2F;far）</th>
+<th>示例说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户头像</td>
+<td><code>fas fa-user</code></td>
+<td>登录信息、作者信息</td>
+</tr>
+<tr>
+<td>链接按钮</td>
+<td><code>fas fa-link</code></td>
+<td>超链接跳转</td>
+</tr>
+<tr>
+<td>联系方式</td>
+<td><code>fas fa-envelope</code></td>
+<td>邮件联系方式（实心）</td>
+</tr>
+<tr>
+<td>联系方式（空心）</td>
+<td><code>far fa-envelope</code></td>
+<td>邮件联系方式（空心风格）</td>
+</tr>
+<tr>
+<td>下载功能</td>
+<td><code>fas fa-download</code></td>
+<td>资源&#x2F;文件下载</td>
+</tr>
+<tr>
+<td>文档</td>
+<td><code>fas fa-file-alt</code></td>
+<td>博文内容、正文</td>
+</tr>
+<tr>
+<td>播放按钮</td>
+<td><code>fas fa-play</code></td>
+<td>媒体播放、视频播放</td>
+</tr>
+<tr>
+<td>时间显示</td>
+<td><code>fas fa-clock</code></td>
+<td>显示发布时间、更新时间</td>
+</tr>
+<tr>
+<td>评论区域</td>
+<td><code>fas fa-comments</code></td>
+<td>评论区图标</td>
+</tr>
+<tr>
+<td>站内搜索</td>
+<td><code>fas fa-search</code></td>
+<td>搜索框放大镜图标</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">snokjing</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/">http://example.com/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">snokjing の 避风港</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/GPT/">GPT</a><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/butterfly/">butterfly</a></div><div class="post-share"><div class="social-share" data-image="https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/05/09/%E6%88%91%E9%87%87%E4%BA%86%E4%B8%80%E6%9C%B5%E8%8A%B1/" title="我采了一朵花...."><img class="cover" src="https://www.helloimg.com/i/2025/05/13/68235b5918ad3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">我采了一朵花....</div></div><div class="info-2"><div class="info-item-1">我要采一朵花 送给妈妈  妈妈妈妈，我给你采了一朵花 阿弥诺斯！   我要采一朵花送给妈妈 妈妈妈妈，我给你采了一朵花阿弥诺斯！ 1$ hexo new &quot;My New Post&quot;   1666</div></div></div></a><a class="pagination-related" href="/2025/05/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%89%E6%8B%A9%E8%87%AA%E7%94%B1%E4%B8%8E%E5%9B%BD%E4%BA%A7%E7%94%9F%E6%80%81%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E6%80%A7/" title="操作系统的选择自由与国产生态的未来可能性"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">操作系统的选择自由与国产生态的未来可能性</div></div><div class="info-2"><div class="info-item-1">操作系统的选择自由与国产生态的未来可能性在当前的技术发展环境中，关于操作系统的自主选择权问题逐渐成为热议话题。越来越多用户关心：未来是否还可以自由使用自己喜欢的系统，还是会被迫转向某些国产平台？ 🌐 生态偏向与现实差距近年来，部分本土系统被高度宣传为“完全成熟、可全面替代”，但在开发者与专业用户看来，其实这类系统在许多方面仍显稚嫩：  软件生态尚不完善，尤其在图形设计、视频剪辑、开发工具等领域； 系统兼容性、用户界面、稳定性仍有待提升； 封闭性较强，不如国际主流系统灵活可控。  这种“宣传领先技术实际”的现象，引发了一些用户对自由选择权的担忧。 🧭 会不会未来被强制只用某些平台？从现阶段看，这种极端情况出现的可能性很低。 主要原因包括：    对比维度 当前国内生态 极端封闭模式（如某些国家）    国际接轨程度 依赖全球市场与软件生态 几乎完全封闭   用户技术素质 个人与企业用户多样，反馈渠道广 用户声音弱，选择面窄   信息通畅性 存在壁垒但依旧开放可控 网络全面封锁   软件使用需求 海量用户依赖...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/1145/01/09/hello-world/" title="Ciallo～(∠・ω&lt; ) World:D"><img class="cover" src="https://www.helloimg.com/i/2025/05/13/68235b512df32.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 1145-01-09</div><div class="info-item-2">Ciallo～(∠・ω&lt; ) World:D</div></div><div class="info-2"><div class="info-item-1">Hello World正所谓饮水思源，以此Hello World来纪念本站的创始由衷感谢伟大的开源社区、hexo及butterfly有了这些开源社区的存在，才有了本站 站长为文科&amp;艺术生出身，没有学过任何有关计算机的学科&#x2F;专业，故创建此站对自身是一个挑战虽然连续尝试失败很多次，但最后终于印证了“坚持就会胜利”毕竟这是当初我想要做的事  Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info:...</div></div></div></a><a class="pagination-related" href="/2025/05/27/UI%E5%BA%93%E6%98%AF%E4%BB%80%E4%B9%88/" title="UI库是什么"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-27</div><div class="info-item-2">UI库是什么</div></div><div class="info-2"><div class="info-item-1">什么是 UI 库？它适用于哪些场景？在构建网站或桌面应用的过程中，我们经常会听到“UI 库”这个词。那么，UI 库到底是什么？它能做什么？适用于哪些项目？本文将用简单直白的方式，带你快速了解 UI 库的核心概念和实际用途。  💡 UI 库是什么？UI 库（User Interface Library，用户界面库），顾名思义，就是一组封装好的“界面组件集合”。这些组件可能包括：  按钮（Button） 输入框（Input） 下拉菜单（Dropdown） 弹窗（Modal） 表格（Table） 通知提示（Notification） 布局栅格（Grid System）等  这些组件已经被封装好样式和交互逻辑，你只需要“拿来用”，就可以快速搭建一个界面，而无需从零手写 CSS 和交互逻辑。  🧱 UI 库和 CSS 框架的区别？   对比项 UI 库 CSS 框架    主要内容 包含样式 + JS交互逻辑 主要是样式定义（布局、配色）   是否有交互 ✅（如按钮点击、弹窗弹出等） ❌ 纯样式   典型代表 Element Plus, Ant Design,...</div></div></div></a><a class="pagination-related" href="/2025/05/27/%E4%BA%8C%E7%BB%B4%E4%B8%89%E7%BB%B4%E8%83%BD%E5%90%A6%E5%85%BC%E9%A1%BE%E5%AD%A6%E4%B9%A0/" title="二维三维能否兼顾学习？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-27</div><div class="info-item-2">二维三维能否兼顾学习？</div></div><div class="info-2"><div class="info-item-1">二维动画与三维动画能不能兼顾学习？在动画学习中，很多初学者或动画专业学生都会思考一个问题：   “二维动画和三维动画能不能同时学？是否必须选一个专精？”   答案其实没有绝对的对错。关键在于你的目标、时间管理、学习路径。本文将从多个角度深入探讨这一话题，帮你判断是否适合”兼修”这两个方向。 🎨 一、技术维度的区别   维度 二维动画（2D） 三维动画（3D）    表现形式 手绘帧动画、骨骼动画 模型绑定、运动轨迹、物理模拟   常用软件 Krita、Toon Boom、TVPaint、Clip Studio Paint Blender、Maya、3ds Max、Cinema 4D   核心技能 绘画基础、节奏感、表演力 建模、绑定、材质、灯光、渲染、空间感   视觉语言 夸张表现力，形体设计自由 空间真实感、物理效果可信   成本控制 更依赖手绘能力与美术经验 依赖设备与渲染时间，技术门槛更高   ✅ 结论：二维动画偏”艺术+绘画思维”；三维动画偏”技术+空间逻辑思维”。 🧭 二、是否能兼顾？取决于学习路径是可以兼顾的，但建议有策略： 1....</div></div></div></a><a class="pagination-related" href="/2025/05/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%89%E6%8B%A9%E8%87%AA%E7%94%B1%E4%B8%8E%E5%9B%BD%E4%BA%A7%E7%94%9F%E6%80%81%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E6%80%A7/" title="操作系统的选择自由与国产生态的未来可能性"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-27</div><div class="info-item-2">操作系统的选择自由与国产生态的未来可能性</div></div><div class="info-2"><div class="info-item-1">操作系统的选择自由与国产生态的未来可能性在当前的技术发展环境中，关于操作系统的自主选择权问题逐渐成为热议话题。越来越多用户关心：未来是否还可以自由使用自己喜欢的系统，还是会被迫转向某些国产平台？ 🌐 生态偏向与现实差距近年来，部分本土系统被高度宣传为“完全成熟、可全面替代”，但在开发者与专业用户看来，其实这类系统在许多方面仍显稚嫩：  软件生态尚不完善，尤其在图形设计、视频剪辑、开发工具等领域； 系统兼容性、用户界面、稳定性仍有待提升； 封闭性较强，不如国际主流系统灵活可控。  这种“宣传领先技术实际”的现象，引发了一些用户对自由选择权的担忧。 🧭 会不会未来被强制只用某些平台？从现阶段看，这种极端情况出现的可能性很低。 主要原因包括：    对比维度 当前国内生态 极端封闭模式（如某些国家）    国际接轨程度 依赖全球市场与软件生态 几乎完全封闭   用户技术素质 个人与企业用户多样，反馈渠道广 用户声音弱，选择面窄   信息通畅性 存在壁垒但依旧开放可控 网络全面封锁   软件使用需求 海量用户依赖...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">snokjing</div><div class="author-info-description">一个想要成为动画糕手的动画人,将理论转换为行动</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/snokjing"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1339710299&amp;website=www.oicqzone.com" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:jun1339710299@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a><a class="social-icon" href="https://space.bilibili.com/1558446144" target="_blank" title="bilibili"><i class="iconfont icon-bilibili"></i></a><a class="social-icon" href="https://space.bilibili.com/1558446144" target="_blank" title="X"><i class="iconfont icon-tuite-copy"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><p> xixi关于画画的不务正业跑过来做网页这件事（谁问你了） </p>
+<p> 看到我去学动画运动规律 </p>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Font-Awesome-%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%EF%BC%9Afab-fas-far-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%88%86%E5%88%AB%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">Font Awesome 图标分类：fab &#x2F; fas &#x2F; far 是什么？分别有什么作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%9B%BE%E6%A0%87%E5%8F%8A%E7%94%A8%E9%80%94%E6%B1%87%E6%80%BB"><span class="toc-number">2.</span> <span class="toc-text">常见图标及用途汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%8F%B7-%E5%93%81%E7%89%8C%E6%A0%87-fab%EF%BC%88%E9%80%82%E5%90%88%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5%EF%BC%89"><span class="toc-number">2.0.1.</span> <span class="toc-text">🏷 品牌标 fab（适合社交链接）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%93%A6-%E5%AE%9E%E5%BF%83-%E7%A9%BA%E5%BF%83%E5%9B%BE%E6%A0%87%EF%BC%88fas-far%EF%BC%89"><span class="toc-number">2.0.2.</span> <span class="toc-text">📦 实心&#x2F;空心图标（fas &#x2F; far）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%9B%A0-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%A0%87%EF%BC%88fas-far%EF%BC%89%EF%BC%9A%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E4%BA%A4%E4%BA%92%E5%8A%9F%E8%83%BD"><span class="toc-number">2.0.3.</span> <span class="toc-text">🛠 功能图标（fas &#x2F; far）：用于博客交互功能</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/%E4%BA%8C%E7%BB%B4%E4%B8%89%E7%BB%B4%E8%83%BD%E5%90%A6%E5%85%BC%E9%A1%BE%E5%AD%A6%E4%B9%A0/" title="二维三维能否兼顾学习？">二维三维能否兼顾学习？</a><time datetime="2025-05-27T14:18:13.000Z" title="发表于 2025-05-27 22:18:13">2025-05-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/UI%E5%BA%93%E6%98%AF%E4%BB%80%E4%B9%88/" title="UI库是什么">UI库是什么</a><time datetime="2025-05-27T13:59:19.000Z" title="发表于 2025-05-27 21:59:19">2025-05-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%89%E6%8B%A9%E8%87%AA%E7%94%B1%E4%B8%8E%E5%9B%BD%E4%BA%A7%E7%94%9F%E6%80%81%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E6%80%A7/" title="操作系统的选择自由与国产生态的未来可能性">操作系统的选择自由与国产生态的未来可能性</a><time datetime="2025-05-27T13:50:51.000Z" title="发表于 2025-05-27 21:50:51">2025-05-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/" title="Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总"><img src="https://www.helloimg.com/i/2025/05/18/68297f7722e25.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总"/></a><div class="content"><a class="title" href="/2025/05/22/%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95%E6%B1%87%E6%80%BB/" title="Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总">Hexo + Butterfly 图标系统详解：Font Awesome 图标分类与常见用法汇总</a><time datetime="2025-05-22T08:39:54.000Z" title="发表于 2025-05-22 16:39:54">2025-05-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/05/09/%E6%88%91%E9%87%87%E4%BA%86%E4%B8%80%E6%9C%B5%E8%8A%B1/" title="我采了一朵花...."><img src="https://www.helloimg.com/i/2025/05/13/68235b5918ad3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我采了一朵花...."/></a><div class="content"><a class="title" href="/2025/05/09/%E6%88%91%E9%87%87%E4%BA%86%E4%B8%80%E6%9C%B5%E8%8A%B1/" title="我采了一朵花....">我采了一朵花....</a><time datetime="2025-05-09T08:11:02.000Z" title="发表于 2025-05-09 16:11:02">2025-05-09</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By snokjing</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div><div class="footer_custom_text">你好来宾，欢迎来到我的 <a target="_blank" rel="noopener" href="https://butterfly.org/">乌托邦</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
