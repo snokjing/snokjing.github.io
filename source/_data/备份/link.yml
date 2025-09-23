@@ -1,0 +1,24 @@
+class:
+  class_name: snokjingの午夜后宫（bushi
+  class_desc: 最友情（
+  link_list:
+
+    1:
+      name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网志框架
+
+    2:
+      name: B84F2246 的小站
+      link: https://blog.b84f2246.top/
+      avatar: https://assets.b84f2246.top/img/avatar.png
+      descr: TECH OTAKUS SAVE THE WORLD!
+      theme_color: '#295bb5'
+      screenshot: https://blog.b84f2246.top/img/screenshot.jpg
+
+    3:
+      name: 姓名
+      link: 链接
+      avatar: 图片
+      descr: 签名
